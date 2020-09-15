@@ -1,0 +1,7 @@
+I'm giving anyone who wants to port this MIlle Borne to other computer
+cart blanche. just maintain the spirit of what I wrote, leave in the
+REMS the list of other ports and who did them and tell me you've elected
+to do a port and then post it somewhere on Atariage.
+        - hloberg, original author
+
+https://atariage.com/forums/topic/311214-mille-borne-in-applesoft-basic/?do=findComment&comment=4632424
