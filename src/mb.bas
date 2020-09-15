@@ -22,14 +22,17 @@
 1500 R11 = 0:R = 0:D = 0:Q = 0:T1$ = "":T2$ = "":Z = 0:RR = 0:R22 = 0:I = 0:X = 0:Y = 0:A$ = "":PR = 0
 1600 VL = 0:NS = 0:S9 = 0:H$ = "":SW = 0:KP = 0:D$ = "":P = 0:C = 0:PO = 0:WN = 0:HZ = 0:SP = 0:SL = 0
 1700 HI = 0:I = 0
-1950  PRINT "READING AND SHUFFLING CARDS":I = 0
+1950  PRINT "READING CARDS...":I = 0
 1960  RESTORE 
 2000  READ D$: IF D$ = "END-DATA" THEN  GOTO 2200
 2100 I = I + 1:CR$(I) = D$: GOTO 2000
 2200 Q = 0:P = 0:TD = I
-2410  FOR Z = 1 TO 200:A =  INT ( RND (1) * 99) + 1:B =  INT ( RND (1) * 99) + 1
+2300 PRINT "SHUFFLING.";
+2310 II=0
+2410  FOR Z = 1 TO TD : B = INT (RND (1) * TD) + 1
 2420 II = II + 1: IF II = 10 THEN II = 0: PRINT ".";
-2500 T1$ = CR$(A):CR$(A) = CR$(B):CR$(B) = T1$: NEXT Z: REMREM REM@@@ 5 CARDS EACH
+2500 T1$ = CR$(Z):CR$(Z) = CR$(B):CR$(B) = T1$: NEXT Z: REMREM REM@@@ 5 CARDS EACH
+2900 PRINT
 3000 C = 1
 3100  FOR I = 1 TO 14 STEP 2
 3200 YR$(1,C) = CR$(I):YR$(2,C) = CR$(I + 1)
