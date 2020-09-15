@@ -199,7 +199,7 @@
 18400  FOR I = 1 TO 2: IF I = 1 THEN X = 9: GOTO 18450
 18420 X = 20
 18450  IF ST$(I) = "" THEN SI$(I) = "STOPPED": GOTO 18500
-18430 SI$(I) = "ROLL !"
+18460 SI$(I) = "ROLL !"
 18500 Y = 14:A$ = SI$(I) + "    ": GOSUB 32000
 18550  IF HZ$(I) = "" THEN A$ = "          ": GOTO 18600
 18570 A$ = HZ$(I)
