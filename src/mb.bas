@@ -291,7 +291,7 @@
 25700  IF PR <  > 1 THEN 26100
 25720 Y = 10:X = 1:A$ = "DISCARD? (Y/N)             ": GOSUB 32000: GET YN$
 25750 Y = 11:X = 1:A$ = "      ": GOSUB 32000
-25800  IF YN$ = "N" THEN DS = 1::Y = 10:X = 1:A$ = "LAST CARD: " + T$: GOSUB 32000: GOTO 26100
+25800  IF YN$ <> "Y" THEN DS = 1::Y = 10:X = 1:A$ = "LAST CARD: " + T$: GOSUB 32000: GOTO 26100
 25900 T$ = T$ + " D" + "          "
 26000 Y = 10:X = 1:A$ = "LAST CARD:             ": GOSUB 32000
 26050 Y = 11:X = 1:A$ = "      ": GOSUB 32000
