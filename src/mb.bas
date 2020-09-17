@@ -403,7 +403,8 @@
 35290 Y = 14:A$ = "ATUS:                         ": GOSUB 32000
 35300 Y = 15:A$ = "                              ": GOSUB 32000
 35305 Y = 16:A$ = "ARDS:                         ": GOSUB 32000
-35310  GOSUB 18300
+35310  IF PR = 1 THEN  GOSUB 18200: GOTO 35320
+35315  GOSUB 18300
 35320  RETURN 
 40000  REM@@@ DEBUG HAND CARDS
 40010  DATA "ROLL !","ROLL !","ACCIDENT  ","PUN PROOF ","SPARE TIRE","STOP      ","OUT OF GAS"
