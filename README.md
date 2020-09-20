@@ -5,6 +5,10 @@ Based on original Apple II port by [**hloberg**](https://atariage.com/forums/pro
 
 If you don't know how to play this classic card game, you can find instructions [in this PDF file](https://atariage.com/forums/applications/core/interface/file/attachment.php?id=766604).
 
+To try this game out yourself, visit http://micah.cowan.name/apple2js/apple2js.html#mb
+
+To download the latest disk image, check out [the releases page](https://github.com/micahcowan/a2millebornes/releases)
+
 ## Building notes
 
 If you want to modify or build from these sources, you will need these [tools for manipulating Apple DOS 3.3 filesystems](https://github.com/deater/dos33fsprogs)
